@@ -1,9 +1,10 @@
 /**/
-    #button{
+    button{
         color: #0000ff;
+        font-family: Times;
     }
 
-    #body{
+    body{
         background-color:skyblue ;
     }
 
