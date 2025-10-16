@@ -2,6 +2,7 @@
     button{
         color: #0000ff;
         font-family: Times;
+        border-radius: 20px;
     }
 
     body{
