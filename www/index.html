@@ -158,7 +158,6 @@
     var period = 0;
     var rest = 0;
     var etime = 0;
-    var etimes = 0;
 
     
     // ボタンの初期設定
@@ -223,10 +222,10 @@
     function timer(){  
         if(active){
             etime = parseInt( (new Date() - startTime)/1000 );
-            
-            
             rest = period - etime;
-            $("#time"). html("経過時間:  "+etimes+"分"+ etime + "秒");
+
+
+            $("#time"). html("経過時間:  " + etime + "秒");
             $("#remain").html("残り時間： "+ rest + "秒");
             analog(rest);
         
