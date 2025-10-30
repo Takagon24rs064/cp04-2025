@@ -59,45 +59,45 @@
     
     #btnA {
         font-size: 20px;
-        position:absolute; top:410px; left:20%; width:25%; height:60px; 
+        position:absolute; top:410px; left:10%; width:25%; height:60px; 
         background-color: rgb(246, 108, 108);
         color: honeydew;
     }
     
     #btnB {
         font-size: 20px;
-        position:absolute; top:380px; left:45%; width:25%; height:60px; 
+        position:absolute; top:380px; left:35%; width:25%; height:60px; 
         background-color: blue;
         color: honeydew;
     }
 
     #btnC {
         font-size: 20px;
-        position:absolute; top:410px; left:70%; width:25%; height:60px; 
+        position:absolute; top:410px; left:60%; width:25%; height:60px; 
         background-color: rgb(1, 209, 1);
         color: honeydew;
     }
 
     #btnD {
         font-size: 20px;
-        position:absolute; top:440px; left:45%; width:25%; height:60px; 
+        position:absolute; top:440px; left:35%; width:25%; height:60px; 
         background-color: yellow;
         color: black;
     }
     
     #hour {
         font-size: 30px;
-        position:absolute; top:520px; left:60px; width:80px; height:40px;   
+        position:absolute; top:520px; left:40px; width:80px; height:40px;   
     }
 
     #minute {
         font-size: 30px;
-        position:absolute; top:520px; left:170px; width:80px; height:40px;   
+        position:absolute; top:520px; left:150px; width:80px; height:40px;   
     }
     
     #second {
         font-size: 30px;
-        position:absolute; top:520px; left:280px; width:80px; height:40px;   
+        position:absolute; top:520px; left:260px; width:80px; height:40px;   
     }
     
     input[type=number] {text-align: right;}

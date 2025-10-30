@@ -156,6 +156,8 @@
     var active = false;
     var startTime = 0;
     var period = 0;
+    var pm = 0;
+    var ps = 0;
     var rest = 0;
     var m = 0;
     var s = 0;
@@ -206,8 +208,10 @@
         
         active = false;
         period = 3600* parseInt( $("#hour").val() )+60* parseInt( $("#minute").val() ) + parseInt( $("#second").val() );
-        $("#time").html("経過時間　:0秒");
-        $("#remain").html("残り時間　: " + period + "秒");
+        pm = parseInt(period/60);
+        ps = parseInt(period - pm*60);
+        $("#time").html("経過時間　:0分0秒");
+        $("#remain").html("残り時間　: " + pm+"分" +ps + "秒");
     }
 
     // ButtonDがクリックされた時の処理
@@ -217,9 +221,11 @@
         $("#minute").val(0);
         $("#second").val(0);
         $("#hour").val(0);
-        $("#time").html("経過時間　:0秒");
+        $("#time").html("経過時間　:0分0秒");
         period = 0;
-        $("#remain").html("残り時間　: " + period + "秒");
+        pm = parseInt(period/60);
+        ps = parseInt(period - pm*60);
+        $("#remain").html("残り時間　: " +pm+"分" +ps+ "秒");
     }
     // 繰り返し実行する処理
     function timer(){  
