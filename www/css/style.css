@@ -77,15 +77,22 @@
         background-color: plum;
         color: red;
     }
+
+    #btnD {
+        font-size: 20px;
+        position:absolute; top:440px; left:2%; width:43%; height:60px; 
+        background-color: yellow;
+        color: green;
+    }
     
     #minute {
         font-size: 30px;
-        position:absolute; top:450px; left:60px; width:80px; height:40px;   
+        position:absolute; top:500px; left:60px; width:80px; height:40px;   
     }
     
     #second {
         font-size: 30px;
-        position:absolute; top:450px; left:190px; width:80px; height:40px;   
+        position:absolute; top:500px; left:190px; width:80px; height:40px;   
     }
     
     input[type=number] {text-align: right;}
