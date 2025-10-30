@@ -47,6 +47,18 @@
         $('#btnF').click(function(e) {
             btnFClick(e);
         });
+        $('#btnG').click(function(e) {
+            btnGClick(e);
+        });
+        $('#btnH').click(function(e) {
+            btnHClick(e);
+        });
+        $('#btnI').click(function(e) {
+            btnIClick(e);
+        });
+        $('#btnJ').click(function(e) {
+            btnJClick(e);
+        });
         init();
     });
     
@@ -181,6 +193,10 @@
         $('#btnD').prop('disabled', false);
         $('#btnE').prop('disabled', false);
         $('#btnF').prop('disabled', false);
+        $('#btnG').prop('disabled', false);
+        $('#btnH').prop('disabled', false);
+        $('#btnI').prop('disabled', false);
+        $('#btnJ').prop('disabled', false);
     }
 
     // Alarmの処理
@@ -287,6 +303,10 @@
     <button id="btnD">reset</button>  
     <button id="btnE">+10</button>
     <button id="btnF">-10</button>
+    <button id="btnG">+10</button>
+    <button id="btnH">-10</button>
+    <button id="btnI">+10</button>
+    <button id="btnJ">-10</button>
     <input type="number" id="hour" value=0 >
     <input type="number" id="minute" value=0 >
     <input type="number" id="second" value=15 >
