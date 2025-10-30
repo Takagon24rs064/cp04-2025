@@ -41,6 +41,12 @@
         $('#btnD').click(function(e) {
             btnDClick(e);
         });
+        $('#btnE').click(function(e) {
+            btnEClick(e);
+        });
+        $('#btnF').click(function(e) {
+            btnFClick(e);
+        });
         init();
     });
     
@@ -164,6 +170,8 @@
     var etime = 0;
     var em = 0;
     var es = 0;
+    var setsp = 0;
+    var setsm = 0;
     
     // ボタンの初期設定
     function init(){
@@ -171,7 +179,8 @@
         $('#btnB').prop('disabled', false);
         $('#btnC').prop('disabled', false);
         $('#btnD').prop('disabled', false);
-        
+        $('#btnE').prop('disabled', false);
+        $('#btnF').prop('disabled', false);
     }
 
     // Alarmの処理
@@ -227,6 +236,19 @@
         ps = parseInt(period - pm*60);
         $("#remain").html("残り時間　: " +pm+"分" +ps+ "秒");
     }
+    //ButtonEがクリックされた時の処理
+    function btnEClick(e){
+        setsp = parseInt($("#second").val())+10;
+         $("#second").val(setsp);
+        
+    }
+    //ButtonFがクリックされた時の処理
+    function btnFClick(e){
+        setsm = parseInt($("#second").val())-10;
+         $("#second").val(setsm);
+        
+    }
+
     // 繰り返し実行する処理
     function timer(){  
         if(active){
@@ -263,6 +285,8 @@
     <button id="btnB">Stop</button>  
     <button id="btnC">Set</button>  
     <button id="btnD">reset</button>  
+    <button id="btnE">+10</button>
+    <button id="btnF">-10</button>
     <input type="number" id="hour" value=0 >
     <input type="number" id="minute" value=0 >
     <input type="number" id="second" value=15 >
